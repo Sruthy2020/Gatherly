@@ -9,32 +9,92 @@
 </head>
 <body class="stormy">
 
-<header>
-    <div class="container">
-        <h1>Gatherly</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Events</a>
-            <a href="#">Contact</a>
-        </nav>
+<!-- Include the Navbar -->
+<nav class="navbar">
+    <div class="navbar-logo">
+        <img src="images/gatherly1.png" alt="Gatherly Logo" class="logo">
     </div>
-</header>
+    <ul class="navbar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="navbar-toggle" id="navbarToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
 
 <section id="hero">
-    <h2>Welcome to Gatherly!</h2>
-    <p>Your go-to platform for managing events with ease and style.</p>
-    <a href="#about" class="button">Learn More</a>
+    <div class="welcome-page">
+        <div class="overlay">
+            <h1 class="welcome-text">Welcome to Gatherly</h1>
+            <p class="subtitle">Your ultimate platform for premium event management</p>
+            <a href="#about" class="button">Explore Now</a>
+        </div>
+    </div>
 </section>
 
 <section id="about">
-    <h2>About Gatherly</h2>
-    <p>Gatherly is designed to simplify event planning, whether it's a birthday, conference, or wedding. We handle all the details so you can focus on enjoying the event.</p>
-    <a href="#services" class="button">Our Services</a>
+    <div class="about-container">
+        <h2>About <span>Gatherly</span></h2>
+        <p class="about-description">
+            Gatherly is designed to simplify event planning, whether it's a birthday, conference, or wedding.
+            We handle all the details so you can focus on enjoying the event.
+        </p>
+        <div class="services">
+            <h3>Our Services</h3>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Service Items -->
+                    <div class="service-item">
+                        <img src="/images/birthday.png" alt="Birthday Parties" class="service-img">
+                        <h4>Birthday Parties</h4>
+                        <p>Make your birthday unforgettable with our tailored planning services.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/images/conference.png" alt="Conferences" class="service-img">
+                        <h4>Conferences</h4>
+                        <p>Host professional conferences with seamless coordination.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/images/wedding.png" alt="Weddings" class="service-img">
+                        <h4>Weddings</h4>
+                        <p>Create your dream wedding with our all-inclusive packages.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/images/corporate.png" alt="Corporate Events" class="service-img">
+                        <h4>Corporate Events</h4>
+                        <p>Plan successful product launches, team-building activities, and more.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/images/concert.png" alt="Music Concerts" class="service-img">
+                        <h4>Music Concerts</h4>
+                        <p>Organize grand concerts with world-class sound and lighting setups.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/images/private.png" alt="Private Gatherings" class="service-img">
+                        <h4>Private Gatherings</h4>
+                        <p>Host intimate gatherings and parties in style with our personalized services.</p>
+                    </div>
+                </div>
+                <button class="prev-btn">❮</button>
+                <button class="next-btn">❯</button>
+            </div>
+        </div>
+
+
+        <a href="#contact" class="button">Learn More</a>
+    </div>
 </section>
+
 
 <footer>
     <p>Designed & Developed by Sruthy. All Rights Reserved &copy; 2024</p>
 </footer>
 
+<script src="/js/script.js"></script>
 </body>
 </html>
