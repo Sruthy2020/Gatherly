@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0); /* Black background */
+  color: rgb(255, 0, 0); /* Red text */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 0, 0); /* Red links */
+}
+
+a:hover {
+  color: rgb(139, 0, 0); /* Dark red on hover */
+}
+
+/* Header Styles */
+header {
+  background-color: rgb(139, 0, 0); /* Dark red */
+  padding: 20px 0;
+}
+
+header h1 {
+  color: rgb(255, 0, 0); /* Red text */
+  text-align: center;
+  font-size: 2.5em;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: 600;
+  color: rgb(255, 0, 0); /* Red text */
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  color: rgb(139, 0, 0); /* Dark red on hover */
+}
+
+/* Hero Section */
+#hero {
+  background-color: rgb(0, 0, 0); /* Black background */
+  color: rgb(255, 0, 0); /* Red text */
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#hero h2 {
+  font-size: 3em;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+#hero .button {
+  background-color: rgb(139, 0, 0); /* Dark red */
+  color: rgb(255, 0, 0); /* Red text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+#hero .button:hover {
+  background-color: rgb(255, 0, 0); /* Red on hover */
+  color: rgb(0, 0, 0); /* Black text on hover */
+}
+
+/* About Section */
+#about {
+  background-color: rgb(139, 0, 0); /* Dark red */
+  color: rgb(255, 0, 0); /* Red text */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5em;
+}
+
+#about p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+#about .button {
+  background-color: rgb(255, 0, 0); /* Red */
+  color: rgb(0, 0, 0); /* Black text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+#about .button:hover {
+  background-color: rgb(139, 0, 0); /* Dark red on hover */
+  color: rgb(255, 0, 0); /* Red text on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgb(0, 0, 0); /* Black background */
+  color: rgb(255, 0, 0); /* Red text */
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+footer p a {
+  color: rgb(255, 0, 0); /* Red links */
+}
+
+footer p a:hover {
+  color: rgb(139, 0, 0); /* Dark red on hover */
+}
