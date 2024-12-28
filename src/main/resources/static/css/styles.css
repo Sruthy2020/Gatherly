@@ -157,7 +157,7 @@ a:hover {
 
 .about-description {
   font-size: 1.2em;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
   line-height: 1.6;
 }
 
@@ -173,7 +173,7 @@ a:hover {
 }
 .services {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 
 .services h3 {
@@ -295,31 +295,11 @@ a:hover {
   background-color: #ff3333; /* Bright red */
   color: #000000;
 }
-
-/* Footer Styles */
-footer {
-  background-color: rgba(0, 0, 0, 0.85); /* Slightly darker black */
-  color: #ffffff; /* White text */
-  text-align: center;
-  padding: 30px 0;
-  border-top: 2px solid #640210; /* Dark red border */
-}
-
-footer p {
-  font-size: 1em;
-}
-
-footer p a {
-  color: #ff6666; /* Soft red links */
-}
-
-footer p a:hover {
-  color: #ff3333; /* Bright red on hover */
-}
-#contact {
+        /* Contact Section */
+        #contact {
             background: url('/images/contact.jpg') no-repeat center center/cover; /* Add your background image here */
             color: #ffffff; /* White text */
-            padding: 50px 20px;
+            padding: 10px 20px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -331,43 +311,57 @@ footer p a:hover {
         .contact-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             max-width: 1200px;
             margin: 0 auto;
             gap: 30px;
         }
 
+        /* Left Column: Info */
+        .contact-info {
+            flex: 1;
+            max-width: 900px;
+            color: #fff;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff6666; /* Soft red */
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            color: #ff6666;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info a svg {
+            margin-right: 10px;
+        }
+
         /* Left Column: Form */
         .contact-form-container {
             flex: 1;
             max-width: 600px;
-            background: linear-gradient(
-                to bottom,
-                rgba(128, 0, 0, 0.85), /* Maroon */
-                rgba(0, 0, 0, 0.85) /* Black */
-            );
+            background: rgba(0, 0, 0, 0.8); /* Transparent black background for form */
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        #contact h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #ff6666; /* Soft red */
-            text-align: center;
-        }
-
-        #contact h2 span {
-            color: #ff3333; /* Bright red for emphasis */
-        }
-
-        .contact-description {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            color: #f0f0f0; /* Soft white */
-            text-align: center;
         }
 
         .contact-form {
@@ -422,18 +416,25 @@ footer p a:hover {
             transform: scale(0.95);
         }
 
-        /* Right Column: Image */
-        .contact-image-container {
-            flex: 1;
-            max-width: 500px;
-            text-align: center;
+        /* Footer Styles */
+        footer {
+          background-color: rgba(0, 0, 0, 0.85); /* Slightly darker black */
+          color: #ffffff; /* White text */
+          text-align: center;
+          padding: 10px 0;
+          border-top: 2px solid #640210; /* Dark red border */
         }
 
-        .contact-image {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        footer p {
+          font-size: 1em;
+        }
+
+        footer p a {
+          color: #ff6666; /* Soft red links */
+        }
+
+        footer p a:hover {
+          color: #ff3333; /* Bright red on hover */
         }
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {

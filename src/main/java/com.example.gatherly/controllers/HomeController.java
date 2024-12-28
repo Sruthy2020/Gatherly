@@ -10,4 +10,9 @@ public class HomeController {
     public String home(Model model) {
         return "home.html";
     }
+
+    @GetMapping("/resources")
+    public String resource(Model model) {
+        return "resource.html";
+    }
 }
