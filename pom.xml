@@ -27,6 +27,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<version>1.4.0.RELEASE</version>
 		</dependency>
 
 
@@ -117,7 +118,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>au.edu.rmit.sept.webapp.WebappApplication</mainClass>
+					<mainClass>com.example.gatherly.WebappApplication</mainClass>
 				</configuration>
 			</plugin>
 

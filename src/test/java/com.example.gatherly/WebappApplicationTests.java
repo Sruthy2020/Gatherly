@@ -1,4 +1,4 @@
-package au.edu.rmit.sept.webapp;
+package com.example.gatherly;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

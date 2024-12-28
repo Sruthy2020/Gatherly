@@ -1,10 +1,9 @@
-package au.edu.rmit.sept.webapp;
+package com.example.gatherly;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-
 public class WebappApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(WebappApplication.class, args);
