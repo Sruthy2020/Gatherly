@@ -15,4 +15,9 @@ public class HomeController {
     public String resource(Model model) {
         return "resource.html";
     }
+
+    @GetMapping("/book-event")
+    public String bookEvent(Model model) {
+        return "bookEvent.html";
+    }
 }
