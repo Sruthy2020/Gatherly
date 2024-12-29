@@ -6,6 +6,34 @@
     <title>Gatherly | Event Management</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Floating Button Styles */
+        .book-event-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff3333; /* Bright red */
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .book-event-btn:hover {
+            background-color: #ff6666;
+            transform: scale(1.1);
+        }
+
+        .book-event-btn:active {
+            transform: scale(0.95);
+        }
+    </style>
 </head>
 <body class="stormy">
 
@@ -15,10 +43,10 @@
         <img src="images/gatherly1.png" alt="Gatherly Logo" class="logo">
     </div>
     <ul class="navbar-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/resources">Our Events</a></li>
+        <li><a href="/#contact">Contact</a></li>
     </ul>
     <div class="navbar-toggle" id="navbarToggle">
         <span></span>
@@ -137,10 +165,11 @@
     </div>
 </section>
 
-
 <footer>
     <p>Designed & Developed by Sruthy. All Rights Reserved &copy; 2024</p>
 </footer>
+<!-- Floating Button -->
+<button class="book-event-btn" onclick="window.location.href='/book-event'">Book an Event</button>
 
 <script src="/js/script.js"></script>
 </body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Event | Gatherly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/book-event.css">
+</head>
+<body>
+<header>
+    <h1>Book an Event</h1>
+    <p>Fill out the form below to book your event with Gatherly.</p>
+</header>
+<main>
+    <form id="eventForm">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        </div>
+        <div class="form-group">
+            <label for="eventType">Type of Event</label>
+            <select id="eventType" name="eventType" required>
+                <option value="">Select an Event Type</option>
+                <option value="wedding">Wedding</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="concert">Concert</option>
+                <option value="private">Private Gathering</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="date">Event Date</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="details" placeholder="Provide any additional information here"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit Booking</button>
+    </form>
+</main>
+<script src="js/book-event.js"></script>
+</body>
+</html>
