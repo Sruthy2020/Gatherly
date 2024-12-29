@@ -23,10 +23,13 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0.5rem;
-  background: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
-  color: #ffffff; /* White text */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  padding: 0.2rem 0.2rem;
+  background: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-logo {
@@ -35,27 +38,26 @@ a:hover {
 }
 
 .logo {
-  width: 80px; /* Larger logo */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 15px;
+  width: 80px;
+  height: auto;
 }
 
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 5rem; /* Increased spacing between links */
+  gap: 4rem;
 }
 
 .navbar-links a {
   text-decoration: none;
-  color: #ffffff; /* White text */
+  color: #ffffff;
   font-weight: 600;
-  font-size: 1.5em; /* Larger font size for visibility */
+  font-size: 1.5em;
   transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #ff6666; /* Soft red on hover */
+  color: #ff6666;
 }
 
 .navbar-toggle {
@@ -65,8 +67,8 @@ a:hover {
 }
 
 .navbar-toggle span {
-  height: 4px; /* Thicker toggle bars */
-  width: 30px; /* Wider toggle bars */
+  height: 3px;
+  width: 30px;
   background: white;
   margin: 4px 0;
   border-radius: 2px;
@@ -438,20 +440,19 @@ a:hover {
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {
   .navbar {
-    padding: 1rem 2rem;
+    padding: 1rem;
   }
 
   .navbar-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100px;
+    top: 100%;
     right: 0;
     background: rgba(0, 0, 0, 0.95);
     width: 250px;
     padding: 1.5rem;
     gap: 1.5rem;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
     border-left: 2px solid #640210;
   }
 

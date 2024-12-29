@@ -24,7 +24,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.2rem 0.2rem;
   background: rgba(0, 0, 0, 0.85);
   color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -46,14 +46,14 @@ a:hover {
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .navbar-links a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.5em;
   transition: color 0.3s ease;
 }
 
@@ -278,7 +278,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/images/why-choose-us-bg.jpg') center/cover no-repeat; /* Background image */
+  background: url('/images/about.png') center/cover no-repeat; /* Background image */
   opacity: 0.1; /* Subtle overlay effect */
   z-index: -1;
 }
@@ -429,52 +429,52 @@ a:hover {
 
 /* Milestones Section */
 #milestones {
-  padding: 60px 20px;
-  background: rgba(0, 0, 0, 0.85); /* Dark background */
-  color: #ffffff;
-  text-align: center;
+    padding: 60px 20px;
+    background: url('/images/about.png') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
 }
 
 .milestones-container h2 {
-  font-size: 3em;
-  color: #ff6666;
-  margin-bottom: 20px;
+    font-size: 3em;
+    color: #ff6666;
+    margin-bottom: 20px;
 }
 
 .milestones-container h2 span {
-  color: #ff3333;
+    color: #ff3333;
 }
 
 .milestone-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
 }
 
 .milestone {
-  text-align: center;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  transition: transform 0.3s, background 0.3s;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s;
 }
 
 .milestone:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05); /* Slight zoom effect */
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
 }
 
 .milestone h3 {
-  font-size: 2.5em;
-  color: #ff3333;
-  margin-bottom: 10px;
+    font-size: 2.5em;
+    color: #ff3333;
+    margin-bottom: 10px;
 }
 
 .milestone p {
-  font-size: 1.2em;
-  color: #f0f0f0;
+    font-size: 1.2em;
+    color: #f0f0f0;
 }
 
 /* Responsive Adjustments */
