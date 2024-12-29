@@ -20,4 +20,9 @@ public class HomeController {
     public String bookEvent(Model model) {
         return "bookEvent.html";
     }
+
+    @GetMapping("/about-section")
+    public String aboutEvent(Model model) {
+        return "about.html";
+    }
 }
