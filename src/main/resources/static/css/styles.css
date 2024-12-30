@@ -296,6 +296,88 @@ a:hover {
   background-color: #ff3333; /* Bright red */
   color: #000000;
 }
+
+/* Testimonials Section */
+#testimonials {
+    background: url('/images/clients.png') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials-container {
+    overflow: hidden;
+    position: relative;
+    max-width: 1200px; /* Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add some horizontal padding for better responsiveness */
+}
+
+.testimonials-container h2 {
+    font-size: 2.5em;
+    color: #ff6666;
+    margin-bottom: 50px;
+}
+
+.testimonials-container h2 span {
+    color: #ff3333;
+}
+
+
+.testimonials-carousel {
+    display: flex;
+    scroll-behavior: smooth;
+     overflow-x: auto;
+    transition: transform 0.5s ease-in-out; /* Smooth scrolling */
+    will-change: transform;
+    width: 100%;
+}
+
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    flex: 0 0 100%;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+h4 {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+    color: #ff6666;
+}
+
+.event-type {
+    font-size: 0.9em;
+    color: #f0f0f0;
+    font-weight: 300;
+}
+
         /* Contact Section */
         #contact {
             background: url('/images/contact.jpg') no-repeat center center/cover; /* Add your background image here */
