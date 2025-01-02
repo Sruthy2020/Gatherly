@@ -1,5 +1,6 @@
 package com.example.gatherly.models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
@@ -29,6 +30,7 @@ public class Booking {
     private String eventType;
 
     @NotNull(message = "Event date is required")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
 
     @Column(length = 1000)
