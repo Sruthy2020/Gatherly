@@ -1,18 +1,8 @@
-package com.example.gatherly.repository;
+package com.example.gatherly.repositories;
 
-import com.example.gatherly.model.Contact;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
+import com.example.gatherly.models.Contact;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
-public class ContactRepository {
-
-   @Autowired
-   private JdbcTemplate jdbcTemplate;
-
-   public int save(Contact contact) {
-       String sql = "INSERT INTO contact (name, email, message) VALUES (?, ?, ?)";
-       return jdbcTemplate.update(sql, contact.getName(), contact.getEmail(), contact.getMessage());
-   }
+public interface ContactRepository extends JpaRepository<Contact, Long> {
 }
+

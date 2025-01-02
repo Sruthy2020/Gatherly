@@ -1,7 +1,8 @@
-package com.example.gatherly.model;
+package com.example.gatherly.models;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 public class Contact {
