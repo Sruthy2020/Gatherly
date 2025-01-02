@@ -18,14 +18,9 @@ public class BookingController {
 
     @PostMapping
     public ResponseEntity<Booking> createBooking(@Valid @RequestBody Booking booking) {
-        try {
-            System.out.println("Received Booking: " + booking); // Log incoming data
-            Booking savedBooking = bookingRepository.save(booking); // Save to DB
-            System.out.println("Saved Booking: " + savedBooking); // Log saved data
-            return new ResponseEntity<>(savedBooking, HttpStatus.CREATED);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+        System.out.println("Received Booking: " + booking); // Log incoming data
+        Booking savedBooking = bookingRepository.save(booking); // Save to DB
+        System.out.println("Saved Booking: " + savedBooking); // Log saved data
+        return new ResponseEntity<>(savedBooking, HttpStatus.CREATED);
     }
 }

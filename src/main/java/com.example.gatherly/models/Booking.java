@@ -25,7 +25,7 @@ public class Booking {
     private String phone;
 
     @NotBlank(message = "Event type is required")
-    @Column(name = "eventType", nullable = false)  // Map to the correct column
+    @Column(name = "eventType")  // Map to the correct column
     private String eventType;
 
     @NotNull(message = "Event date is required")

@@ -191,6 +191,13 @@ a:hover {
     margin: 0 auto;
 }
 
+.carousel-cont {
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+    max-width: 89%; /* Adjust width as needed */
+    margin: 0 auto;
+}
+
 .carousel-track {
     display: flex;
     scroll-behavior: smooth; /* Smooth scrolling */

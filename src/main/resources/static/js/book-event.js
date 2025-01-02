@@ -1,5 +1,6 @@
-document.getElementById('eventForm').addEventListener('submit', async function (e) {
-    e.preventDefault();
+document.getElementById('eventForm').addEventListener('submit', async (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+    console.log('Booking form submission started'); // Debugging log
 
     const bookingData = {
         name: document.getElementById('name').value,
@@ -10,27 +11,36 @@ document.getElementById('eventForm').addEventListener('submit', async function (
         details: document.getElementById('details').value,
     };
 
+    console.log('Booking Data:', bookingData); // Debugging log
+
     try {
+        // Show a loading alert
+        alert('Submitting your booking, please wait...');
+
         const response = await fetch('http://localhost:8080/api/bookings', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(bookingData),
+            body: JSON.stringify(bookingData), // Send data as JSON
         });
+
+        console.log('Response received:', response.status); // Debugging log
 
         if (response.ok) {
             const savedBooking = await response.json();
-            alert('Your booking has been submitted successfully!');
+            alert('🎉 Your booking has been submitted successfully!');
             console.log('Saved Booking:', savedBooking);
-            document.getElementById('eventForm').reset();
+            document.getElementById('eventForm').reset(); // Reset the form
+        } else if (response.status === 400) {
+            const errors = await response.json();
+            console.error('Validation Errors:', errors);
+            alert('❌ Failed to submit your booking. Please check your input and try again.');
         } else {
-            const errorData = await response.json();
-            console.error('Error:', errorData);
-            alert('Failed to submit your booking. Please try again.');
+            alert('⚠️ Something went wrong. Please try again later.');
         }
     } catch (error) {
         console.error('Submission error:', error);
-        alert('An error occurred while submitting your booking. Please try again later.');
+        alert('🚨 An unexpected error occurred. Please try again later.');
     }
 });
