@@ -107,4 +107,45 @@ document.addEventListener("DOMContentLoaded", () => {
         startAutoScroll();
     }
 });
+document.getElementById('contactForm').addEventListener('submit', async (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+    console.log('Form submission started'); // Debugging log
+
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+    };
+
+    console.log('Form Data:', formData); // Debugging log
+
+    try {
+        // Show a loading alert
+        alert('Sending your message, please wait...');
+
+        const response = await fetch('http://localhost:8080/api/contacts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData), // Send data as JSON
+        });
+
+        console.log('Response received:', response.status); // Debugging log
+
+        if (response.ok) {
+            alert('🎉 Message sent successfully! We will get back to you shortly.');
+            document.getElementById('contactForm').reset(); // Reset the form
+        } else if (response.status === 400) {
+            const errors = await response.json();
+            console.error('Validation Errors:', errors);
+            alert('❌ Failed to send message. Please check your input and try again.');
+        } else {
+            alert('⚠️ Something went wrong. Please try again later.');
+        }
+    } catch (error) {
+        console.error('Error during submission:', error);
+        alert('🚨 An unexpected error occurred. Please try again later.');
+    }
+});
 
