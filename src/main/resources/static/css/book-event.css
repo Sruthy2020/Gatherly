@@ -45,6 +45,7 @@ a:hover {
 .navbar-links {
     list-style: none;
     display: flex;
+    margin-inline-end: 15px;
     gap: 4rem;
 }
 
@@ -195,7 +196,7 @@ footer p a:hover {
         font-size: 1rem;
         padding: 12px 20px;
     }
-
+}
 
     /* Responsive Navbar */
     @media screen and (max-width: 768px) {
@@ -246,3 +247,6 @@ footer p a:hover {
         }
 
     }
+
+
+

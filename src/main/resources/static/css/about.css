@@ -47,6 +47,7 @@ a:hover {
     list-style: none;
     display: flex;
     gap: 4rem;
+    margin-inline-end: 15px;
 }
 
 .navbar-links a {
