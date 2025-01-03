@@ -1,10 +1,11 @@
 package com.example.gatherly.models;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
 
+import javax.validation.constraints.Future;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
@@ -30,9 +31,11 @@ public class Booking {
     private String eventType;
 
     @NotNull(message = "Event date is required")
+    @Future(message = "Event date must be in the future")  // Ensure the date is in the future
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
 
+    @Length(max = 1000, message = "Details should not exceed 1000 characters")
     @Column(length = 1000)
     private String details;
 
